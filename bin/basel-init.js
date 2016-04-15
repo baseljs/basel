@@ -21,7 +21,7 @@ var options = {
   title: program.title,
   type: program.type || 'simple',
   description: program.description || 'BASEL Application',
-  cipher: cipher,
+  cipher: program.cipher,
   passowrd: program.passowrd,
   algorithm: program.algorithm,
 };

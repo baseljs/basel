@@ -1,22 +1,44 @@
 {
-  "author": "Jayr Alencar <http://github.com/jayralencar>",
-  "license": "MIT",
   "name": "basel",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Framework for Bootstrap, AngularJS, SQLite, Electron",
+  "author": "Jayr Alencar <http://github.com/jayralencar>",
+  "readmeFilename": "README.md" ,
+  "keywords": [
+    "basel",
+    "basel-io",
+    "desktop",
+    "electron",
+    "bootstrap",
+    "angularjs"
+  ],
+  "tags": [
+    "basel",
+    "basel-io",
+    "desktop",
+    "electron",
+    "bootstrap",
+    "angularjs"
+  ],
+  "license": "MIT",
   "bin": {
     "basel-init": "./bin/basel-init.js"
   },
-  "main" : "./lib/index.js",
+  "main" : "./lib/basel-init.js",
   "preferGlobal": "true",
   "dependencies": {
     "chalk": "^0.5.1",
     "commander": "^2.4.0",
-    "progress": "^1.1.8",
-    "prompt": "^0.2.13",
     "shelljs": "^0.3.0",
     "lodash": "^2.4.1",
     "async-series":"latest",
     "inquirer": "^0.8.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClubeDosGeeksCoding/basel.git"
   }
 }

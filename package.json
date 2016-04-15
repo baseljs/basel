@@ -1,0 +1,21 @@
+{
+  "author": "Jayr Alencar <http://github.com/jayralencar>",
+  "license": "MIT",
+  "name": "basel",
+  "version": "0.0.1",
+  "description": "Framework for Bootstrap, AngularJS, SQLite, Electron",
+  "bin": {
+    "basel-init": "./bin/basel-init.js"
+  },
+  "main" : "./lib/index.js",
+  "preferGlobal": "true",
+  "dependencies": {
+    "commander": "^2.4.0",
+    "progress": "^1.1.8",
+    "prompt": "^0.2.13",
+    "shelljs": "^0.3.0",
+    "lodash": "^2.4.1",
+    "async-series":"latest",
+    "inquirer": "^0.8.0"
+  }
+}

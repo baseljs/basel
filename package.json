@@ -2,7 +2,7 @@
   "author": "Jayr Alencar <http://github.com/jayralencar>",
   "license": "MIT",
   "name": "basel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Framework for Bootstrap, AngularJS, SQLite, Electron",
   "bin": {
     "basel-init": "./bin/basel-init.js"

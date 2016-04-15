@@ -32,7 +32,10 @@
     "shelljs": "^0.3.0",
     "lodash": "^2.4.1",
     "async-series":"latest",
-    "inquirer": "^0.8.0"
+    "inquirer": "^0.8.0",
+    "crypto": "latest",
+    "sqlite-sync":"latest",
+    "sqlite-cipher":"latest"
   },
   "engines": {
     "node": ">=0.8.0"

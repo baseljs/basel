@@ -12,7 +12,7 @@ Create App
 basel-init myApp
 ```
 
-Intall dependencias
+Intall dependencies
 ```shell
 cd myApp && npm install
 ```

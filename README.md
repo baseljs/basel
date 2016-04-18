@@ -21,3 +21,15 @@ Run
 ```shell
 npm start
 ```
+
+## Help
+
+### Init
+```shell
+basel-init --help
+```
+
+### Database
+```shell
+basel-database --help
+```

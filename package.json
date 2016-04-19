@@ -1,6 +1,6 @@
 {
   "name": "basel",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Framework for Bootstrap, AngularJS, SQLite, Electron",
   "author": "Jayr Alencar <http://github.com/jayralencar>",
   "readmeFilename": "README.md" ,
@@ -23,7 +23,8 @@
   "license": "MIT",
   "bin": {
     "basel-init": "./bin/basel-init.js",
-    "basel-database": "./bin/basel-database.js"
+    "basel-database": "./bin/basel-database.js",
+    "basel-crud": "./bin/basel-crud.js"
   },
   "main" : "./lib/basel-init.js",
   "preferGlobal": "true",
@@ -36,7 +37,9 @@
     "inquirer": "^0.8.0",
     "crypto": "latest",
     "sqlite-sync":"latest",
-    "sqlite-cipher":"latest"
+    "sqlite-cipher":"latest",
+    "jsdom":"latest",
+    "jquery":"latest"
   },
   "engines": {
     "node": ">=0.8.0"

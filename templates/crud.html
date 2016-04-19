@@ -1,48 +1,50 @@
-<div class="row">
-	<div class="col-md-8">
-		<button class="btn btn-primary" data-toggle="modal" data-target="#modalNew"><span class="glyphicon glyphicon-plus"></span> New</button>
+<div class="basel-controller">
+	<div class="row">
+		<div class="col-md-8">
+			<button class="btn btn-primary" data-toggle="modal" data-target="#modalNew"><span class="glyphicon glyphicon-plus"></span> New</button>
+		</div>
+		<div class="col-md-4">
+			<input class="form-control" placeholder="Search" ng-model="search">
+		</div>
 	</div>
-	<div class="col-md-4">
-		<input class="form-control" placeholder="Search" ng-model="search">
-	</div>
-</div>
-<hr>
-<div class="row">
-	<div class="col-md-12">
-		<table class="table table-striped" ng-init="list()">
-			<thead class="basel-table-head">
-				
-			</thead>
-			<tbody class="basel-table-body">
-				
-			</tbody>
-		</table>
-	</div>
-</div>
-<!-- Paginação -->
-<div class="row">
-	<div class="col-md-12 text-center">
-		<dir-pagination-controls>
-	    </dir-pagination-controls>
-	</div>
-</div>
+	<hr>
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table table-striped" ng-init="list()">
+				<thead class="basel-table-head">
 
-<!-- Modal Cadastro e Edição -->
-<div class="modal fade" id="modalNew" tabindex="-1" role="dialog" >
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">{{}}</h4>
-			</div>
-			<div class="modal-body">
-				<form class="basel-form">
-					
-				</form>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default basel-btn-cancel" ng-click="cancel()" data-dismiss="modal">Cancelar</button>
-				<button type="button" class="btn btn-primary basel-btn-save" ng-click="save()">Salvar</button>
+				</thead>
+				<tbody class="basel-table-body">
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- Paginação -->
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<dir-pagination-controls>
+			</dir-pagination-controls>
+		</div>
+	</div>
+
+	<!-- Modal Cadastro e Edição -->
+	<div class="modal fade" id="modalNew" tabindex="-1" role="dialog" >
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">{{}}</h4>
+				</div>
+				<div class="modal-body">
+					<form class="basel-form">
+						
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default basel-btn-cancel" ng-click="cancel()" data-dismiss="modal">Cancelar</button>
+					<button type="button" class="btn btn-primary basel-btn-save" ng-click="save()">Salvar</button>
+				</div>
 			</div>
 		</div>
 	</div>

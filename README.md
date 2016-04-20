@@ -25,7 +25,7 @@ npm start
 ## Database
 To create a new table in the database of your BASEL app. 
 ```shell
-basel-database --table USER --columns '{"id":"INTEGER", "name":"CHAR(100)", "email":"TEXT"}' --pk id
+basel-database --table USERS --columns "id:INTEGER, name:TEXT" --pk id
 ```
 And manipulate the database.
 
@@ -44,11 +44,11 @@ And manipulate the database.
 
 #### Example:
 ```shell
-basel-database --table USER --columns "id:INTEGER, name:CHAR(100), email:TEXT, profile:INTEGER" --pk id --incremental id --references "profile:profiles.id"
+basel-database --table USERS --columns "id:INTEGER, name:CHAR(100), email:TEXT, profile:INTEGER" --pk id --incremental id --references "profile:profiles.id"
 ```
 Mean:
 ```sql
-CREATE table USER(
+CREATE table USERS(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name CHAR (100),
   email TEXT,
@@ -59,7 +59,7 @@ CREATE table USER(
 ## CRUD - Creating
 To create CRUD from database tables.
 ```shell
-basel-crud users --table USER
+basel-crud users --table USERS
 ```
 ### Options
 ```shell
@@ -74,9 +74,9 @@ basel-crud users --table USER
 
 #### Examples
 ```shell
-basel-crud users --table USER -c userController -v user -r users
+basel-crud users --table USERS -c userController -v user -r users
 ```
-Create a CRUD on Controller and view based in table USER.
+Create a CRUD on Controller and view based in table USERS.
 
 
 ## Help

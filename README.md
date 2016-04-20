@@ -38,7 +38,7 @@ And manipulate the database.
     -t, --table <table>               Create database table
     -c, --columns <columns>           Database table columns. Ex: "id:INTEGER, name:TEXT"
     -p, --pk <primary>                Database table primary key
-    -r, --references <references>     Refences. Ex: '{"id":"table.id_table"}'
+    -r, --references <references>     Refences. Ex: "id":"table.id_table"
     -i, --incremental <incremental>   incremental columns. Ex: id or "id, number, ..."
 ```
 

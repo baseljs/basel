@@ -27,7 +27,6 @@ basel.config.show_menu = program.menu || 1;
 if(basel.error){
 	console.log(basel.error)
 }else{
-	// console.log(basel.config)
 	wizard(basel.config);
 }
 

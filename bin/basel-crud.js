@@ -7,8 +7,8 @@ var basel = require('../lib/basel.config.js'),
 
 program
   .description('Create a BASEL crud in the current app')
-  .option('-tbl, --table <table>', 'Database Table')
-  .option('-db, --database <database>', 'Database')
+  .option('-t, --table <table>', 'Database Table')
+  .option('-d, --database <database>', 'Database')
   .option('-c, --controller <controller>', 'Controller name')
   .option('-v, --view <view>', 'View name (.html)')
   .option('-r, --route <route>', 'Route (Ex.: persons)')

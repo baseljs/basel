@@ -12,7 +12,7 @@ Create App
 basel-init myApp
 ```
 
-Intall dependencies
+Install dependencies
 ```shell
 cd myApp && npm install
 ```
@@ -34,17 +34,17 @@ And manipulate the database.
     -h, --help                        output usage information
     -p, --password <password>         Data base encripted passowrd
     -a, --algorithm <algorithm>       Data base encripted algorithm
-    -sql, --sql <sql>                 Sql to run
-    -tbl, --table <table>             Create database table
-    -cols, --columns <columns>        Database table columns. Ex: '{"id":"INTEGER", "name":"TEXT"}'
-    -pk, --pk <primary>               Database table primary key
-    -rf, --references <references>    Refences. Ex: '{"id":"table.id_table"}'
-    -ai, --incremental <incremental>  incremental columns. Ex: id or "id, number, ..."
+    -s, --sql <sql>                   Sql to run
+    -t, --table <table>               Create database table
+    -c, --columns <columns>           Database table columns. Ex: "id:INTEGER, name:TEXT"
+    -p, --pk <primary>                Database table primary key
+    -r, --references <references>     Refences. Ex: '{"id":"table.id_table"}'
+    -i, --incremental <incremental>   incremental columns. Ex: id or "id, number, ..."
 ```
 
 #### Example:
 ```shell
-basel-database --table USER --columns '{"id":"INTEGER", "name":"CHAR(100)", "email":"TEXT", "profile":"INTEGER"}' --pk id --incremental id --references '{"profile":"profiles.id"}'
+basel-database --table USER --columns "id:INTEGER, name:CHAR(100), email:TEXT, profile:INTEGER" --pk id --incremental id --references "profile:profiles.id"
 ```
 Mean:
 ```sql
@@ -63,13 +63,13 @@ basel-crud users --table USER
 ```
 ### Options
 ```shell
- -h, --help                     output usage information
-    -tbl, --table <table>          Database Table
-    -db, --database <database>     Database
-    -c, --controller <controller>  Controller name
-    -v, --view <view>              View name (.html)
-    -r, --route <route>            Route (Ex.: persons)
-    -m, --menu <menu>              Show in main menu (1 - Yes, 0 - No) - Default: 1
+    -h, --help                      output usage information
+    -t, --table <table>             Database Table
+    -d, --database <database>       Database
+    -c, --controller <controller>   Controller name
+    -v, --view <view>               View name (.html)
+    -r, --route <route>             Route (Ex.: persons)
+    -m, --menu <menu>               Show in main menu (1 - Yes, 0 - No) - Default: 1
 ```
 
 #### Examples

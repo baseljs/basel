@@ -3,18 +3,19 @@ var basel = require('../lib/basel.config.js'),
 	database = require('../lib/database.js'),
 	inquirer = require('inquirer'),
 	program = require('commander'),
+	utils = require('../lib/utils')
 	_ = require('lodash');
 
 program
   .description('Create and access the database of a BASEL Application')
   .option('-p, --password <password>', 'Data base encripted passowrd')
   .option('-a, --algorithm <algorithm>', 'Data base encripted algorithm')
-  .option('-sql, --sql <sql>', 'Sql to run')
-  .option('-tbl, --table <table>', 'Create database table')
-  .option('-cols, --columns <columns>', 'Database table columns. Ex: \'{"id":"INTEGER", "name":"TEXT"}\'')
-  .option('-pk, --pk <primary>', 'Database table primary key')
-  .option('-rf, --references <references>', 'Refences. Ex: \'{"id":"table.id_table"}\'')
-  .option('-ai, --incremental <incremental>', 'incremental columns. Ex: id or "id, number, ..." ')
+  .option('-s, --sql <sql>', 'Sql to run')
+  .option('-t, --table <table>', 'Create database table')
+  .option('-c, --columns <columns>', 'Database table columns. Ex: "id:INTEGER, name:TEXT"')
+  .option('-p, --pk <primary>', 'Database table primary key')
+  .option('-r, --references <references>', 'Refences. Ex: "profile:profiles.id"')
+  .option('-i, --incremental <incremental>', 'incremental columns. Ex: id or "id, number, ..." ')
   .parse(process.argv);
 
 basel.config.database = program.args.length ? program.args[0] : basel.config.database;
@@ -76,7 +77,7 @@ function wizard (options) {
 			});
 		}
 		if(!options.primary){
-			var cols = JSON.parse(options.columns);
+			var cols = utils.json(options.columns);
 			questions.push({
 				type: 'input',
 				name: 'primary',

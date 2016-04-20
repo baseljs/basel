@@ -5,13 +5,13 @@ var wizard = require('../lib/wizard'),
 program
   .description('Create a BASEL application in the current working directory')
   .option('-b, --branch <branch>', 'git branch')
-  .option('-db, --database <database>', 'Data base name')
-  .option('-cf, --cipher ', 'Data base encripted')
+  .option('-d, --database <database>', 'Data base name')
+  .option('-c, --cipher ', 'Data base encripted')
   .option('-p, --passowrd <passowrd>', 'Data base encripted passowrd')
   .option('-a, --algorithm <algorithm>', 'Data base encriptation algorithm')
   .option('-t, --title <title>', 'Data base name')
-  .option('-tp, --type <type>', 'Application type')
-  .option('-d, --description <description>', 'Application description')
+  .option('-y, --type <type>', 'Application type')
+  .option('-e, --description <description>', 'Application description')
   .parse(process.argv);
 
 var options = {

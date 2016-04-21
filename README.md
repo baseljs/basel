@@ -63,13 +63,17 @@ basel-crud users --table USERS
 ```
 ### Options
 ```shell
-    -h, --help                      output usage information
-    -t, --table <table>             Database Table
-    -d, --database <database>       Database
-    -c, --controller <controller>   Controller name
-    -v, --view <view>               View name (.html)
-    -r, --route <route>             Route (Ex.: persons)
-    -m, --menu <menu>               Show in main menu (1 - Yes, 0 - No) - Default: 1
+    -h, --help                       output usage information
+    -t, --table <table>              Database Table
+    -n, --columns <columns>          For new tables. Table columns. Ex: "id:INTEGER, name:TEXT"
+    -p, --pk <primary>               Primary key of new table
+    -f, --references <references>    Refences of new table. Ex: "profile:profiles.id"
+    -i, --incremental <incremental>  incremental columns. Ex: id or "id, number, ..."
+    -d, --database <database>        Database
+    -c, --controller <controller>    Controller name
+    -v, --view <view>                View name (.html)
+    -r, --route <route>              Route (Ex.: persons)
+    -m, --menu <menu>                Show in main menu (1 - Yes, 0 - No) Default 1
 ```
 
 #### Examples
@@ -78,6 +82,11 @@ basel-crud users --table USERS -c userController -v user -r users
 ```
 Create a CRUD on Controller and view based in table USERS.
 
+### Create CRUD and Table
+you can create the CRUD and at the same time the table. Inform the table columns using the short <strong>-n</strong> or <strong>--columns</strong> "id:INTEGER, name:TEXT, ... ".
+```shell
+basel-crud users --table USERS -n "id:INTEGER, name:TEXT" 
+```
 
 ## Help
 

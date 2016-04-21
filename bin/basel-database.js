@@ -13,7 +13,7 @@ program
   .option('-s, --sql <sql>', 'Sql to run')
   .option('-t, --table <table>', 'Create database table')
   .option('-c, --columns <columns>', 'Database table columns. Ex: "id:INTEGER, name:TEXT"')
-  .option('-p, --pk <primary>', 'Database table primary key')
+  .option('-p, --pk <primary>', 'Primary key of new table')
   .option('-r, --references <references>', 'Refences. Ex: "profile:profiles.id"')
   .option('-i, --incremental <incremental>', 'incremental columns. Ex: id or "id, number, ..." ')
   .parse(process.argv);

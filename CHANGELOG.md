@@ -1,6 +1,13 @@
 # Change Log
 This change log is started in 0.0.9;
 
+## 0.0.12 (2016-04-21)
+- List CRUDS with ``` basel-crud -l ```
+- Delete CRUD by id with ``` base-crud -d <id> ```
+
+## 0.0.11 (2016-04-21)
+- Create table when create CRUD
+
 ## 0.0.10 (2016-04-20)
 - Change creating tables
 - Create utils module

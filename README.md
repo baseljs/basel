@@ -69,11 +69,13 @@ basel-crud users --table USERS
     -p, --pk <primary>               Primary key of new table
     -f, --references <references>    Refences of new table. Ex: "profile:profiles.id"
     -i, --incremental <incremental>  incremental columns. Ex: id or "id, number, ..."
-    -d, --database <database>        Database
+    -b, --database <database>        Database
     -c, --controller <controller>    Controller name
     -v, --view <view>                View name (.html)
     -r, --route <route>              Route (Ex.: persons)
     -m, --menu <menu>                Show in main menu (1 - Yes, 0 - No) Default 1
+    -d, --delete <id>                To delete CRUD by ID
+    -l, --list                       To list CRUDS
 ```
 
 #### Examples

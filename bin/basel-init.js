@@ -4,7 +4,6 @@ var wizard = require('../lib/wizard'),
 
 program
   .description('Create a BASEL application in the current working directory')
-  .option('-b, --branch <branch>', 'git branch')
   .option('-d, --database <database>', 'Data base name')
   .option('-c, --cipher ', 'Data base encripted')
   .option('-p, --passowrd <passowrd>', 'Data base encripted passowrd')

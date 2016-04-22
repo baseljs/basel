@@ -9,9 +9,10 @@ program
   .option('-c, --cipher ', 'Data base encripted')
   .option('-p, --passowrd <passowrd>', 'Data base encripted passowrd')
   .option('-a, --algorithm <algorithm>', 'Data base encriptation algorithm')
-  .option('-t, --title <title>', 'Data base name')
+  .option('-t, --title <title>', 'Application title')
   .option('-y, --type <type>', 'Application type')
   .option('-e, --description <description>', 'Application description')
+  .option('-u, --url <url>', 'URL of Git repository')
   .parse(process.argv);
 
 var options = {

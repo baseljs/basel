@@ -1,6 +1,9 @@
 # Change Log
 This change log is started in 0.0.9;
 
+## 0.0.13 (206-04-22)
+- Use URL git to clone base repositories
+
 ## 0.0.12 (2016-04-21)
 - List CRUDS with ``` basel-crud -l ```
 - Delete CRUD by id with ``` base-crud -d <id> ```

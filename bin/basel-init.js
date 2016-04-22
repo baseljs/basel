@@ -25,6 +25,7 @@ var options = {
   cipher: program.cipher,
   passowrd: program.passowrd,
   algorithm: program.algorithm,
+  url: program.url
 };
 
 wizard(options);

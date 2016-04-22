@@ -71,8 +71,9 @@ if(basel.error){
 
 function wizard (options) {
 	var questions = [];
-	options.controller = options.controller || options.name_+"Controller";
-	options.view = options.view || options.name_+".html";
+	var word = shortName(options.name_);
+	options.controller = options.controller || word+"Controller";
+	options.view = options.view || word+".html";
 
 	if(!options.table){
 		questions.push({
@@ -83,7 +84,6 @@ function wizard (options) {
 	}
 
 	if(!options.route){
-		var word = options.name_.toLowerCase().replace(/ /g,'');
 		questions.push({
 			type: 'input',
 			name: 'route',
@@ -115,4 +115,34 @@ function wizard (options) {
 	    _.assign(options, results);
 	    crud.init(options);
 	});
+}
+
+
+function shortName(str){
+	return removerAcentos(str).toLowerCase().replace(/ /g,'');
+}
+
+/**
+ * Remove acentos de caracteres
+ * @param  {String} stringComAcento [string que contem os acentos]
+ * @return {String}                 [string sem acentos]
+ */
+function removerAcentos( newStringComAcento ) {
+  var string = newStringComAcento;
+	var mapaAcentosHex 	= {
+		a : /[\xE0-\xE6]/g,
+		e : /[\xE8-\xEB]/g,
+		i : /[\xEC-\xEF]/g,
+		o : /[\xF2-\xF6]/g,
+		u : /[\xF9-\xFC]/g,
+		c : /\xE7/g,
+		n : /\xF1/g
+	};
+
+	for ( var letra in mapaAcentosHex ) {
+		var expressaoRegular = mapaAcentosHex[letra];
+		string = string.replace( expressaoRegular, letra );
+	}
+
+	return string;
 }

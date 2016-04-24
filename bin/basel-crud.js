@@ -13,9 +13,8 @@ program
   .option('-p, --pk <primary>', 'Primary key of new table')
   .option('-f, --references <references>', 'Refences of new table. Ex: "profile:profiles.id"')
   .option('-i, --incremental <incremental>', 'incremental columns. Ex: id or "id, number, ..." ')
-  .option('-b, --database <database>', 'Database')
   .option('-c, --controller <controller>', 'Controller name')
-  .option('-v, --view <view>', 'View name (.html)')
+  .option('-v, --view <view>', 'View name (*.html)')
   .option('-r, --route <route>', 'Route (Ex.: persons)')
   .option('-m, --menu <menu>', 'Show in main menu (1 - Yes, 0 - No) Default 1')
 

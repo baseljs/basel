@@ -1,6 +1,8 @@
 # basel
 Framework for Bootstrap, AngularJS, SQLite, Electron
 
+## [Documentation](http://baseljs.github.io/#/)
+
 ## Usage
 Install
 ```shell

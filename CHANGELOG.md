@@ -1,6 +1,9 @@
 # Change Log
 This change log is started in 0.0.9;
 
+## 0.0.15 (2016-04-25)
+- Create model folder if doesn't exists - REview
+
 ## 0.0.14 (2016-04-25)
 - Create model folder if doesn't exists
 

@@ -1,7 +1,10 @@
 # Change Log
 This change log is started in 0.0.9;
 
-## 0.0.13 (206-04-22)
+## 0.0.14 (2016-04-25)
+- Create model folder if doesn't exists
+
+## 0.0.13 (2016-04-22)
 - Use URL git to clone base repositories.
 - Show error on create table, if necessary.
 - Use CRUD name in view, controller and route name.

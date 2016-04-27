@@ -1,6 +1,5 @@
-# basel
-Framework for Bootstrap, AngularJS, SQLite, Electron
-
+<p align="center">  <img src="./images/basel.fw.png" height="180px"></p>
+<p align="center"> Framework for Bootstrap, AngularJS, SQLite, Electron</p>
 ## [Documentation](http://baseljs.github.io/#/)
 
 ## Usage

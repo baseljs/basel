@@ -26,7 +26,7 @@
     "basel-database": "./bin/basel-database.js",
     "basel-crud": "./bin/basel-crud.js"
   },
-  "main" : "./lib/basel-init.js",
+  "main" : "./lib/basel",
   "preferGlobal": "true",
   "dependencies": {
     "chalk": "^0.5.1",

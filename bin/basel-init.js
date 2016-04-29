@@ -11,6 +11,7 @@ program
   .option('-t, --title <title>', 'Application title')
   .option('-e, --description <description>', 'Application description')
   .option('-u, --url <url>', 'URL of Git repository')
+  .option('-b, --base <base>', 'Base app for BASEL')
   .parse(process.argv);
 
 var options = {
@@ -23,7 +24,8 @@ var options = {
   cipher: program.cipher,
   passowrd: program.passowrd,
   algorithm: program.algorithm,
-  url: program.url
+  url: program.url,
+  base: program.base
 };
 
 wizard(options);

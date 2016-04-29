@@ -1,6 +1,9 @@
 # Change Log
 This change log is started in 0.0.9;
 
+## 0.0.17 (2016-04-29)
+- Adapt to accept other themes
+
 ## 0.0.16 (2016-04-27)
 - Fixes main path
 

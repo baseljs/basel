@@ -17,15 +17,15 @@ app.controller("CONTROLLER_NAME", function($scope, $location){
 			//Edit
 			var id = $scope.form[$scope.primary_key];
 			delete $scope.form[$scope.primary_key];
-			delete $scope.form.$$hashKey; 
-			basel.database.update($scope.table_name, $scope.form, {$scope.primary_key: id}); 
+			delete $scope.form.$$hashKey; //Apaga elemento $$hashKey do objeto
+			basel.database.update($scope.table_name, $scope.form, {PRIMARY_KEY: id}); //entidade, dados, where
 		}else{
 			//new
-			basel.database.insert($scope.table_name, $scope.form); 
+			basel.database.insert($scope.table_name, $scope.form); // entidade, dados
 		}
 		$scope.form = {};
 		$scope.list();
-		$('#modalNew').modal('hide');
+		$('#CONTROLLER_NAME').modal('hide');
 	}
 
 	// Cancel form
@@ -33,16 +33,16 @@ app.controller("CONTROLLER_NAME", function($scope, $location){
 		$scope.form = {};
 	}
 
-	//Open to edit
+	//Abrindo para editar
 	$scope.edit = function(data){
 		$scope.form = data;
-		$('#modalNew').modal('show');
+		$('#CONTROLLER_NAME').modal('show');
 	}
 
-	//Delete
+	//Excluindo
 	$scope.delete = function(data){
 		if(confirm("Are you sure?")){
-			basel.database.delete($scope.table_name, {$scope.primary_key: data[$scope.primary_key]});
+			basel.database.delete($scope.table_name, {PRIMARY_KEY: data[$scope.primary_key]});
 			$scope.list();
 		}
 	}

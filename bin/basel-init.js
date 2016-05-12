@@ -16,7 +16,6 @@ program
 
 var options = {
   name: program.args.length ? program.args[0] : 'basel',
-  branch: program.branch || 'master',
   database: program.database || 'database',
   title: program.title,
   type: program.type || 'simple',

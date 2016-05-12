@@ -1,6 +1,6 @@
 {
   "name": "basel",
-  "version": "0.0.17",
+  "version": "0.1.0",
   "description": "Framework for Bootstrap, AngularJS, SQLite, Electron",
   "author": "Jayr Alencar <http://github.com/jayralencar>",
   "readmeFilename": "README.md" ,

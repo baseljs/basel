@@ -1,4 +1,4 @@
-<p align="center">  <img src="./images/basel.fw.png" height="180px"></p>
+<p align="center">  <img src="http://baseljs.github.io/dist/img/logo_m.fw.png" height="180px"></p>
 <p align="center"> Framework for Bootstrap, AngularJS, SQLite, Electron</p>
 ## [Documentation](http://baseljs.github.io/#/)
 

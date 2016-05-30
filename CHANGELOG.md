@@ -1,6 +1,9 @@
 # Change Log
 This change log is started in 0.0.9;
 
+## 0.1.1 (2016-05-30)
+- Deleting crud
+
 ## 0.1.0 (2016-05-12)
 - Save basel.json data in package.json
 - Release

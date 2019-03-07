@@ -38,7 +38,7 @@
     "crypto": "latest",
     "sqlite-sync":"latest",
     "sqlite-cipher":"latest",
-    "jsdom":"latest",
+    "jsdom":"1.1.0",
     "jquery":"latest"
   },
   "engines": {
